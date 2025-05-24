@@ -1,0 +1,154 @@
+.grocery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grocery-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.grocery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.grocery-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.grocery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grocery-image-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.grocery-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.grocery-details {
+  padding: 15px;
+}
+
+.grocery-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  height: 40px;
+  overflow: hidden;
+}
+
+.grocery-category {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.grocery-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3bb77e;
+  margin-bottom: 15px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.quantity-btn {
+  background-color: #f5f5f5;
+  border: none;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.quantity-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity-display {
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  background-color: #3bb77e;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2a9d6e;
+}
+
+.view-cart-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.view-cart-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.view-cart-btn:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .grocery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grocery-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Italian&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{margin: 0px;  padding:0px; box-sizing:border-box;}
+body{font-family:'Roboto', sans-serif;}
+.container-fluid{padding: 0px 45px;}
+
+.transition{transition: all 0.3s ease-in-out;}
+.cursor{cursor: pointer;}
+
+.bg-g,bg-success{background:#3bb77e !important; }
+.text-g{color:#3bb77e;}
+.hd{font-size:38px; font-weight: 600;margin-bottom: 25px;}
+
+@media screen and (max-width: 1200px) {
+  .container-fluid { padding: 0px 30px; }
+  .hd { font-size: 32px; }
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid { padding: 0px 20px; }
+  .hd { font-size: 28px; margin-bottom: 20px; }
+}
+
+@media screen and (max-width: 480px) {
+  .container-fluid { padding: 0px 15px; }
+  .hd { font-size: 24px; margin-bottom: 15px; }
+  body { font-size: 14px; }
+}
