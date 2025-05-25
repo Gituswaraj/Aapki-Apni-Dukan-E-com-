@@ -7,6 +7,10 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from './Components/header/header';
 import Home from './pages/Home/index';
 import About from './pages/About/index';
+import Contact from './pages/Contact/index';
+import FAQ from './pages/FAQ/index';
+import Privacy from './pages/Privacy/index';
+import Terms from './pages/Terms/index';
 import Footer from './Components/footer';
 
 import ProductListing from './pages/ProductListing';
@@ -39,6 +43,10 @@ function App(){
                         <Routes>
                             <Route exact={true} path="/" element={<Home/>}/>
                             <Route exact={true} path="/about" element={<About/>}/>
+                            <Route exact={true} path="/contact" element={<Contact/>}/>
+                            <Route exact={true} path="/faq" element={<FAQ/>}/>
+                            <Route exact={true} path="/privacy" element={<Privacy/>}/>
+                            <Route exact={true} path="/terms" element={<Terms/>}/>
                             <Route exact={true} path="/products" element={<ProductListing/>}/>
                             <Route exact={true} path="/products/:productId" element={<ProductDetail/>}/>
                             <Route exact={true} path="/grocery" element={<GroceryProducts/>}/>

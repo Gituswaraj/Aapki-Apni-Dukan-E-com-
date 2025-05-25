@@ -1,0 +1,76 @@
+.terms-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.terms-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.terms-header h1 {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+}
+
+.terms-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.terms-content {
+    line-height: 1.6;
+}
+
+.terms-section {
+    margin-bottom: 2.5rem;
+}
+
+.terms-section h2 {
+    font-size: 1.6rem;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.terms-section p {
+    margin-bottom: 1rem;
+}
+
+.terms-list {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.terms-list li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-details {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.contact-details p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .terms-header h1 {
+        font-size: 2rem;
+    }
+    
+    .terms-section h2 {
+        font-size: 1.4rem;
+    }
+}
